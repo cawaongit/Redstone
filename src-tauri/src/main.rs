@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    redstone_lib::run()
+    test_tauri_lib::run()
 }

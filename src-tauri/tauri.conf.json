@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "redstone",
+  "productName": "test-tauri",
   "version": "0.1.0",
-  "identifier": "com.redstone.app",
+  "identifier": "com.raftdev.test-tauri",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "redstone",
+        "title": "test-tauri",
         "width": 800,
         "height": 600
       }

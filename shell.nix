@@ -6,8 +6,8 @@ pkgs.mkShell {
     pkg-config
     gobject-introspection
     cargo 
-    cargo-tauri
-    nodejs
+    cargo-tauri # Optional, Only needed if Tauri doesn't work through the traditional way.
+    nodejs # Optional, this is for if you have a js frontend
   ];
 
   buildInputs = with pkgs;[
@@ -23,5 +23,9 @@ pkgs.mkShell {
     pango
     webkitgtk_4_1
     openssl
-  ];  
+  ];
+  
+  shellHook = ''
+    export WEBKIT_DISABLE_DMABUF_RENDERER=1
+  '';
 }
